@@ -1,0 +1,104 @@
+body{
+    
+    display: flex;
+    margin-right: 35vw;
+    margin-left: 35vw;
+    margin-top: 12.5vh;
+    margin-bottom: 12.5vh;
+    background-color: #FFFDD0;
+}
+p {
+    margin: 0px;
+}
+
+button{
+    
+    font-size: 30px;
+    border-radius: 10px;
+}
+.main-div{
+
+    width: 30vw;
+    height: 75vh;
+    padding: 5%;
+    padding-right: 5% ;
+    padding-left: 5%;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.screen-div{
+
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+    background-color: #D3D3D3;
+}
+
+.inputs-div{
+    
+    width: 100%;
+    height: 77%;
+    background-color: blue;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+     padding: 5%;
+}
+.clear-div{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.clear-button{
+    
+    width: 100%;
+    height: 50%;
+    margin: 2%;
+}
+.bottom-input-div{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.numbers-div{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.operations-div {
+
+    display: flex;
+    height: 100%;
+    width: 40%;
+    flex-wrap: wrap;
+}
+.number-button{
+
+    margin: 2%;
+    height: 20%;
+    width: 28%;
+}
+
+.operation-button{
+    
+    margin: 2%;
+    margin-top: 7%;
+    height: 27.5%;
+    width: 46%;
+    margin-bottom: 10%;
+}
+.equal-button{
+    
+    margin-top: -5%;
+    width: 100%;
+    height: 20%;
+}
