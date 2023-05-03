@@ -27,10 +27,10 @@ clearInput.addEventListener('click', () => {
 equalInput.addEventListener('click', () => {
     
     if (operationMode == true){
+        operationMode = false
         data.innerText += input.innerText
         data.innerText = eval(data.innerText)
         input.innerText = ''
-        operationMode = false
 
     }
     else {
@@ -41,7 +41,12 @@ equalInput.addEventListener('click', () => {
 
 /* adds numbers to display (used upon number click)*/
 function addToInput(){
-    input.innerText += this.textContent
+
+    if (input.innerText.length < 16) {
+        input.innerText += this.textContent
+    } else {
+        alert("The calculator only supports numbers up to 15 digits.")
+    }
 }
 
 /* All numbers button functionality */
@@ -50,9 +55,19 @@ for (i in numberInputs){
 }
 
 function operationEvent(op){
+    
 
-    data.innerText = input.innerText
+    if (data.innerText == ""){
+
+        data.innerText = input.innerText
+    } else {
+
+        input.innerText = data.innerText
+    }
+
+    
     input.innerText = `${op}` + ''
+    
 }
 
 for (i in operationInputs){
