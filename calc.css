@@ -11,25 +11,29 @@ body{
     align-items: center;
     overflow: hidden;
 }
-@media (max-width:500px) {
 
-    body{
-        margin-right:1vw;
-        margin-left:1vw;
-    }
-}
 p {
     margin: 0px;
 }
 
 button{
     
-    font-size: 30px;
+    font-size: 1.8vw;
     border-radius: 10px;
     border-color: #9384D1;
     background-color: #dfdaf2;
 }
 
+@media (max-width:500px) {
+
+    body{
+        margin-right:1vw;
+        margin-left:1vw;
+    }
+    button {
+        font-size: 6vw;
+    }
+}
 
 .main-div{
     
